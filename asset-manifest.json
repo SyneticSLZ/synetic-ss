@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/synetic-ss/static/css/main.2650566f.css",
+    "main.js": "/synetic-ss/static/js/main.a3abfd07.js",
+    "static/media/10.png": "/synetic-ss/static/media/10.829b56c8ec126b05ca9d.png",
+    "index.html": "/synetic-ss/index.html",
+    "main.2650566f.css.map": "/synetic-ss/static/css/main.2650566f.css.map",
+    "main.a3abfd07.js.map": "/synetic-ss/static/js/main.a3abfd07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2650566f.css",
+    "static/js/main.a3abfd07.js"
+  ]
+}
