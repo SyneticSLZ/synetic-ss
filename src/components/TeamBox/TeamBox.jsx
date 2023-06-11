@@ -5,7 +5,7 @@ export default function TeamBox(props){
     return(
         <div className="team__box">
             <div className="team__box-img">
-                {/* <img src={props.image} alt=""/> */}
+                {<img src={props.img} alt=""/>}
             </div>
             <div className="team__title">
                 <p>{props.title}</p></div>

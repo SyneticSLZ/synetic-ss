@@ -22,7 +22,7 @@ className="text-slider"
    <li>SYNETIC   </li>
    <li> <span>SINISTER</span>  SOULS</li>
    
-   
+  
   
    
   </ul>

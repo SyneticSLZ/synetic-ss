@@ -10,6 +10,27 @@ export const GlobalStyles = createGlobalStyle`
   cursor: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  background-color: black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(233,0,179);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 
 
 :root{
@@ -56,7 +77,7 @@ export const GlobalStyles = createGlobalStyle`
   width:100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  background-size: 100% 200vh;
   }
 
 

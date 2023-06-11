@@ -60,16 +60,15 @@ export default function Team(){
         
 <div id="team">    
 <div className="text-body">
-             <h1>Meet The Team</h1>
-                 <div className="straplines reveal">
+             <h1>Meet The Founders</h1>
+                 {/* <div className="straplines reveal">
                  <p> Join Us. </p>
                  <p> Let's disrupt together.</p> 
-                 </div>
+                 </div> */}
              </div>
             <div className="team-container reveal">
-                <TeamBox title="Creator Lex0" text="Lead writer of Dr Szink. SciFi junkie. Blockchain Dev since 2017"/>
-                <TeamBox title="Creator Ruyu" text="American Muscle car mad. Film officiando. Student of human behavourial science"/>
-                <TeamBox title="Builder Panthera" text="Fav character: Yoshimitsu, deconstructed apple pies and building on the blockcahin" />
+                <TeamBox title="Ro" text="Lead writer of Dr Szink. SciFi junkie. Blockchain Dev since 2017" img=""/>
+                <TeamBox title="Alex" text="American Muscle car mad. Film officiando. Student of human behavourial science"/>
         
 
                 </div>

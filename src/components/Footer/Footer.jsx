@@ -28,7 +28,7 @@ export default function Footer(){
     <div className="reveal container"
     >
       <a href="/"> 
-        <h3 className="footer__logo" width='100px' height="100px">Sinister Souls</h3>
+        <h3 className="footer__logo" width='100px' height="100px">Synetic</h3>
         
     </a>
 
@@ -70,7 +70,7 @@ export default function Footer(){
     </div>
    
     <div className="footer__copyright">
-        &copy; Sinister Souls. All Rights Reserved.
+        &copy; Synetic LTD. All Rights Reserved.
       </div>
     <div className="attribution">
       <a href="/">Coded by PinkPistachioButterfly</a>.
