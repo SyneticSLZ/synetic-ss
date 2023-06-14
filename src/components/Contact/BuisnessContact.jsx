@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+// import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+// import DoneAllIcon from '@mui/icons-material/DoneAll';
+// import DeleteIcon from '@mui/icons-material/Delete';
+
 import "../Contact/Contact.css"
 
 export default function BuisnessContact (){
@@ -16,7 +20,10 @@ export default function BuisnessContact (){
         <div id="row">
         <div id="Offer">
             <h1>WHAT WE OFFER</h1>
-            <h5> (Tick) working closely to build your £D virtul store</h5>
+             <h3 className="h3"> working closely to build your £D virtul store</h3>
+            <h3 className="h3"> working closely to build your £D virtul store</h3>
+            <h3 className="h3"> working closely to build your £D virtul store</h3>
+            <h3 className="h3"> working closely to build your £D virtul store</h3>
         </div>
         <div id="contact">
             

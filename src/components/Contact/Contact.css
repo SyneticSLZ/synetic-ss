@@ -91,3 +91,6 @@
     border: 2px solid var(--clr-accent_second);
     box-shadow: 5px 5px 10px var(--clr-accent_second);
   }
+  .h3{
+    color: aliceblue;
+  }

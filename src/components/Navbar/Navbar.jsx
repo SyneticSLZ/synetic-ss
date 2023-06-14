@@ -37,10 +37,10 @@ const [open, setOpen] = useState(false);
         </li>
         {/* <li className="nav__link">
           <Scrolllink smooth={true} duration={3000}>
-            <Link to="/synetic-ss/contact" className="linkbtn" To="/synetic-ss/contact">Schedule a call</Link>
+            <Link to="/synetic-ss/stripe" className="linkbtn" To="/synetic-ss/stripe">Schedule a call</Link>
           </Scrolllink>
-        </li>
-         */}
+        </li> */}
+        
       </ul></div>
             {/* <div className="nav__list">
                <ul> <li className="nav__link">

@@ -39,7 +39,7 @@ right:0;
     list-style: none;
     height:100%;
     display:flex;
-    animation: scrolling 5s linear infinite;
+    animation: scrolling 15s linear infinite;
     font-family: var(--ff-primary);
     color:white;
 }

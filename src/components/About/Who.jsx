@@ -23,14 +23,14 @@ export default function Who(){
 
     return(
         <animated.div id="about-main" className="about">
-        <div className="hhu"><h1>WE ARE GOING TO CHANGE THE WORLD</h1></div> 
+        <div className="quote1"><h1>" EMBRACE THE FUTURE"</h1></div> 
 
-        <div className="row">
+        <div className="row2">
         <div className="story">
             <div className="storytitle">OUR STORY</div>
             <div className="storytext">
                 <ul>
-                    <li className="Text">London Based, Few friends trying tp change the world</li>
+                    <li className="Text">London Based, Few friends trying to make the world a better place</li>
                     <li className="Text">Felt like web shopping was borning and lacked the exitement of actually getting up and browsing in a store.</li>
                     <li className="Text">We didnt like having to juggle tabs and apps when buying diferent things, such as dog treats and an outfit for friday night.</li>
                     <li className="Text">We wanted to create a space with it all in one place, and that created the same immersive feelings of excitement of shopping in real life.  </li>
@@ -38,10 +38,10 @@ export default function Who(){
                 </ul>
             </div>
         </div>
-        <div className="storyimg">
+        {/* <div className="storyimg">
             <img src="" alt="" />
-        </div>
-        <div className="about-image">
+        </div> */}
+        <div className="stotyimg">
         
         <img className="reveal"
         width="600" 

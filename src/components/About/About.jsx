@@ -44,7 +44,7 @@ export default function About(){
             {/* <p><b> */}
 {/* Step into the world of Synetic, where a global community of brands and small businesses unite on a single virtual platform.lose yourself in a fashion paradise where every trend comes to life. <br></br>Synetic is your passport to an escape from reality, where your desires become reality. </b></p> */}
             <p><b >EXPLORE</b>    a whole new world, where anything is possible </p>
-            <p><b >WITH </b>   a growing community of brands you love</p>
+            <p><b >JOIN </b>   a growing community of brands you love</p>
             <p><b>BUILD. OWN. CREATE.</b></p>
             {/* <p>Live a second digital reality where nothing is off limits. </p>
             <p> Use your Sinister Soul NFTs as playable characters</p>

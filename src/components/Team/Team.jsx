@@ -67,8 +67,8 @@ export default function Team(){
                  </div> */}
              </div>
             <div className="team-container reveal">
-                <TeamBox title="Ro" text="Lead writer of Dr Szink. SciFi junkie. Blockchain Dev since 2017" img=""/>
-                <TeamBox title="Alex" text="American Muscle car mad. Film officiando. Student of human behavourial science"/>
+                <TeamBox title="Rohan Mehmi" text="Lead writer of Dr Szink. SciFi junkie. Blockchain Dev since 2017" img="M.jpeg"/>
+                <TeamBox title="Alexander Macgregor" text="Stopping the place from burning down"/>
         
 
                 </div>
