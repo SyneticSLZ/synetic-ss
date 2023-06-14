@@ -23,6 +23,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../global';
 import { theme } from '../theme';
 import { Parallax, ParallaxLayer } from 'react-spring';
+import NavbarHero from "../components/Navbar/NavbarHero";
 // import IFRAME from "../components/Hero/HeroHome";
 
 export default function Home() {
@@ -76,10 +77,10 @@ window.addEventListener("scroll", reveal);
           {/* </FocusLock> */}
       </div>
 
-         <Navbar />
+         <NavbarHero />
          
          <Home123 />
-         <Footer /> 
+         {/* <Footer />  */}
          </>
     </ThemeProvider>
          );

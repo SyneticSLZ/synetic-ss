@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     flex-direction: row;
     padding: 1em;
@@ -12,6 +12,22 @@ header {
     z-index: 1000;
     /* box-shadow:  5px 5px 1px 100px  rgba(233, 0, 194, 0.13); */
     
+justify-content: center;
+}
+.headerHero{
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  align-items: center;
+  /* background-color: linear-gradient(rgba(255, 0, 0, 0.5), rgba(197, 197, 197, 0.5)); */
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.9528186274509804) 0%, rgba(0,0,0,0.022846638655462215) 100%);
+  width:100%;
+  /* position: fixed; */
+  top: 0;
+  z-index: 1000;
+  /* box-shadow:  5px 5px 1px 100px  rgba(233, 0, 194, 0.13); */
+  
 justify-content: center;
 }
 

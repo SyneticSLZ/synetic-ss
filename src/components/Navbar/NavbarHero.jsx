@@ -7,11 +7,11 @@ import {Link as Scrolllink, animateScroll} from "react-scroll";
 import {Link} from "react-router-dom";
 
 
-export default function Navbar(){
+export default function NavbarHero(){
   
 const [open, setOpen] = useState(false);
     return (
-        <header className="header">
+        <header className="headerHero">
             <div className="logo"> 
             <Scrolllink to="/" smooth={true} duration={3000} onClick ={ () => 
                 animateScroll.scrollToTop()}> SYNETIC  </Scrolllink>  
