@@ -12,6 +12,7 @@ export default function PartnerHero(){
         config: { duration:1500 }
     
     });
+    
     const [offsetY, setOffsetY]=  useState(0);
     const handleScroll =() => setOffsetY(window.pageYOffset);
     

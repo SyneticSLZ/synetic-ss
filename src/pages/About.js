@@ -12,6 +12,7 @@ import Footer from "../components/Footer/Footer";
 import ImageSlider from "../components/ImageSlider/ImageSlider";
 import TextSlider from "../components/TextSlider/TextSlider";
 import ImageSlider2 from "../components/ImageSlider2/ImageSlider2";
+import TextSlider2 from "../components/TextSlider/TextSlider2";
 import Oasis from "../components/Oasis/Oasis";
 import DotRing from "../components/DotRing/DotRing";
 import { MouseContext } from "../context/mouse-context";
@@ -83,7 +84,7 @@ window.addEventListener("scroll", reveal);
     <Who />
       <About />
       <TextSlider />
-         
+     < TextSlider2 />
          <Oasis />
          <Team />
          {/* <ImageSlider />

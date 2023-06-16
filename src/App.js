@@ -1,7 +1,7 @@
 import React, { useState, useContext, useRef } from "react";
 import {BrowserRouter, Routes, Route, Router, Link} from 'react-router-dom'
 import { MouseContext } from "./context/mouse-context";
-// import FocusLock from 'react-focus-lock';
+// import {Focus Lock} from 'react-focus-lock';
 import { useOnClickOutside } from './hooks/useOnClickOutside';
 import  Home from "./pages/Home"
 import Aboutpage from "./pages/About";

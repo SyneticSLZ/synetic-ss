@@ -4,19 +4,20 @@
     left: 0;
     width: 32px;
     height: 32px;
-    /* border: 1px solid rgb(255, 255, 255); */
-    /* border: 1px solid  rgb(177, 0, 247); */
+    border: 1px solid rgb(255, 255, 255); 
+    border: 1px solid  rgb(177, 0, 247);
     border: 1px solid rgba(233,0,179,1);
     box-shadow: 0 5px 5px 5px rgb(233, 0, 194, 0.16);
     border-radius: 100%;
     transform: translate(-50%, -50%);
-     /* -webkit-transition-duration: 100ms;
-    transition-duration: 100ms;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out; */
-    /* will-change: width, height, transform, border;  */
+     /* -webkit-transition-duration: 100ms; */
+    /* transition-duration: 100ms; */
+    /* -webkit-transition-timing-function: ease-out; */
+    transition-timing-function: ease-out;
+    will-change: width, height, transform, border; 
     z-index: 1999;
     pointer-events: none;
+    /* background-image: "3181705cfd8eb85e2eef81cd028af2a5.png";
     
   }
   
