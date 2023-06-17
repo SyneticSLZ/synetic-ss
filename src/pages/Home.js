@@ -22,6 +22,7 @@ import { useOnClickOutside } from '../hooks/useOnClickOutside';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../global';
 import { theme } from '../theme';
+import NavbarHero from "../components/Hero/NavbarHero"
 import { Parallax, ParallaxLayer } from 'react-spring';
 // import IFRAME from "../components/Hero/HeroHome";
 
@@ -76,10 +77,9 @@ window.addEventListener("scroll", reveal);
           {/* </FocusLock> */}
       </div>
 
-         <Navbar />
+         <NavbarHero />
          
          <Home123 />
-         <Footer /> 
          </>
     </ThemeProvider>
          );

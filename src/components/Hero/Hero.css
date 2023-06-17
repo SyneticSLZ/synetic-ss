@@ -153,17 +153,22 @@ p{
   /* border-color: #fff 5px solid; */
 }
 iframe{
-  min-width: 100%;
+  /* min-width: 100%; */
   /* border: #fff 5px solid; */
-  min-height: 100vh;
-}
+  /* min-height: 100vh; */
+} 
 
 #myVideo {
   min-width: 100%;
   min-height: 100vh;
 }
 body {
-  margin: 0;
+  
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
   /* overflow: hidden; */
 }
 
