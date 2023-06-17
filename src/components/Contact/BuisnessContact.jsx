@@ -33,16 +33,16 @@ export default function BuisnessContact (){
             <h3 className="h3">Integrate.</h3>
             <p className="p">We establish and get you running on the SyneticX platform </p>
             <div className="center"><div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-			<span class="m_scroll_arrows trei"></span>
+			<span class="m_scroll_arrows q4"></span>
+			<span class="m_scroll_arrows q5"></span>
+			<span class="m_scroll_arrows q6"></span>
 		    </div></div>
             <h3 className="h3"> Manage.</h3>
             <p className="p">Update or add new products/features to your store</p>
             <div className="center"><div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-			<span class="m_scroll_arrows trei"></span>
+			<span class="m_scroll_arrows q7"></span>
+			<span class="m_scroll_arrows q8"></span>
+			<span class="m_scroll_arrows q9"></span>
 		    </div></div>
             <h3 className="h3">Events.</h3>
             <p className="p">We will provide and host live events for new clothing lines or marketing attempts  </p>
