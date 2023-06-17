@@ -24,7 +24,7 @@ export default function Oasis(){
            <p 
            className="section__subtitle section__subtitle--about"
            >Photorealistic, 
-        virtual  reality. </p>
+        Digital  Reality. </p>
            
         <div className="about-oasis__body">
            
@@ -45,13 +45,13 @@ export default function Oasis(){
 
 
 {/* <p className="highlight strong"> <span id="circle"> </span><span id="circle"> </span>We believe that everyone is unique and should have the opportunity to show of thier individuality and creativity, that has been so much suppressed by out day to day lives. </p> */}
- <p className="reveal sub-text"> Build, own and rent out your own real estate 
+ <p className="reveal sub-text"> SHOP FOR EXCLUSIVE BRANDS ONLY ON OUR PLATFORM
  </p>
-<p className="reveal sub-text">  Join virtual meetings with co-workers 
+<p className="reveal sub-text">  VISUALISE YOUR PRODUCT IN 3D 
  </p>
-<p className="reveal sub-text ">Walk into a vegas style casino.
+<p className="reveal sub-text ">A WHOLE NEW WAY TO SHOP AND SELL
  </p>
-<p className="reveal sub-text"> All from the comfort of your own home !
+<p className="reveal sub-text"> UNIQUE EVENTS EXCLUSIVE TO SYNETICX
  </p>
 {/* <p className="reveal sub-text">Fly a fighter-jet.
  </p> */}

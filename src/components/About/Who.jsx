@@ -23,7 +23,7 @@ export default function Who(){
 
     return(
         <animated.div id="about-main" className="about">
-        <div className="quote1"><h1>" EMBRACE THE FUTURE"</h1></div> 
+        {/* <div className="quote1"><h1>" EMBRACE THE FUTURE"</h1></div>  */}
 
         <div className="row2">
         <div className="story">

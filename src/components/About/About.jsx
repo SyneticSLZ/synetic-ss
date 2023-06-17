@@ -25,7 +25,7 @@ export default function About(){
         <animated.div id="about-main" 
         className="about"
         >
-        <div className="hhu"><h1>THE FUTURE IS HERE</h1></div> 
+        <div className="hhu"><h1>"EMBRACE THE FUTURE"</h1></div> 
          <div className="row">
         <div className="about-image">
         
