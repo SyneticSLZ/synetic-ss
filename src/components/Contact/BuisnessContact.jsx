@@ -19,11 +19,38 @@ export default function BuisnessContact (){
     return(
         <div id="row">
         <div id="Offer">
-            <h1>WHAT WE OFFER</h1>
-             <h3 className="h3"> working closely to build your £D virtul store</h3>
-            <h3 className="h3"> working closely to build your £D virtul store</h3>
-            <h3 className="h3"> working closely to build your £D virtul store</h3>
-            <h3 className="h3"> working closely to build your £D virtul store</h3>
+            {/* <h1>WHAT WE OFFER</h1> */}
+
+            <h3 className="h3">Build.</h3>
+            <p className="p">We will work closely and swiftly with you to build you a shop that aligns with your brand goals in a streamlined process</p>
+
+            <div className="center"><div>
+			<span class="m_scroll_arrows unu"></span>
+			<span class="m_scroll_arrows doi"></span>
+			<span class="m_scroll_arrows trei"></span>
+		    </div></div>
+
+            <h3 className="h3">Integrate.</h3>
+            <p className="p">We establish and get you running on the SyneticX platform </p>
+            <div className="center"><div>
+			<span class="m_scroll_arrows unu"></span>
+			<span class="m_scroll_arrows doi"></span>
+			<span class="m_scroll_arrows trei"></span>
+		    </div></div>
+            <h3 className="h3"> Manage.</h3>
+            <p className="p">Update or add new products/features to your store</p>
+            <div className="center"><div>
+			<span class="m_scroll_arrows unu"></span>
+			<span class="m_scroll_arrows doi"></span>
+			<span class="m_scroll_arrows trei"></span>
+		    </div></div>
+            <h3 className="h3">Events.</h3>
+            <p className="p">We will provide and host live events for new clothing lines or marketing attempts  </p>
+
+
+
+
+
         </div>
         <div id="contact">
             

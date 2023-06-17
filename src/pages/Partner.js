@@ -89,6 +89,7 @@ window.addEventListener("scroll", reveal);
         <UseCase />
         <TextSlider />
         <BuisnessContact />
+        {/* <Contact /> */}
          <Footer /> 
          </>
     // </ThemeProvider>
