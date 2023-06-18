@@ -83,7 +83,7 @@ text-shadow: 5px 3x 5px  var(--clr-accent);
     font-family: var(--ff-tertiary);
   }
 
-  @media (max-width:400px){
+  @media (max-width:800px){
    .nav__list ul{
       display: none;
       
@@ -134,7 +134,7 @@ font-family: var(--ff-secondary);
     padding:0;
 }
 
-@media (max-width:700px){ 
+@media (max-width:800px){ 
   header ul{
     display: none;
   }

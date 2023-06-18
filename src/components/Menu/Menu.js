@@ -1,7 +1,8 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
-import {Link, animateScroll} from "react-scroll";
+import {Link as Scrolllink, animateScroll} from "react-scroll";
+import {Link} from "react-router-dom";
 
 const Menu = ({ open, ...props }) => {
 
@@ -13,15 +14,21 @@ const Menu = ({ open, ...props }) => {
      <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
        <a href="#about-main" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
-        <Link to="/synetic-ss/home" className="link" To="/synetic-ss/home">Home</Link>
+        <Scrolllink smooth={true} duration={3000}>
+            <Link to="/synetic-ss/home" To="/synetic-ss/home">Home</Link>
+          </Scrolllink>
       </a>
       <a href="#team" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
-        Team
+        <Scrolllink smooth={true} duration={3000}>
+            <Link to="/synetic-ss/Partner" To="/synetic-ss/Partner">Partner With Us</Link>
+          </Scrolllink>
         </a>
       <a href="#hero" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
-        Mint
+        <Scrolllink smooth={true} duration={3000}>
+            <Link to="/synetic-ss/about" To="/synetic-ss/about">About Us</Link>
+          </Scrolllink>
         </a>
       <a href="#roadmap" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
@@ -43,6 +50,7 @@ const Menu = ({ open, ...props }) => {
         </a> 
 
          </div> 
+
                     
        
 </StyledMenu>
