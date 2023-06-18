@@ -1,6 +1,7 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import {Link, animateScroll} from "react-scroll";
 
 const Menu = ({ open, ...props }) => {
 
@@ -8,11 +9,11 @@ const Menu = ({ open, ...props }) => {
   const tabIndex = isHidden ? 0 : -1;
 
   return (
-    <></>
-    // <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      /* <a href="#about-main" tabIndex={tabIndex}>
+    // <></>
+     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
+       <a href="#about-main" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
-        About
+        <Link to="/synetic-ss/home" className="link" To="/synetic-ss/home">Home</Link>
       </a>
       <a href="#team" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
@@ -35,16 +36,16 @@ const Menu = ({ open, ...props }) => {
         <a href="https://twitter.com/_sinister_souls" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
         <i className="fab fa-medium"></i>
-        </a>  */
-        /* <a href="https://twitter.com/_sinister_souls" tabIndex={tabIndex}>
+        </a>  
+         <a href="https://twitter.com/_sinister_souls" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
         <i className="fab fa-twitter"></i>
-        </a> */
+        </a> 
 
-        /* </div> */
+         </div> 
                     
        
-    // </StyledMenu>
+</StyledMenu>
   )
 }
 

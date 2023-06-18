@@ -12,7 +12,37 @@ import Partner from "./pages/Partner"
 export default function App() {
 
   
+  
+    let Parallax;
+    const { cursorChangeHandler } = useContext(MouseContext);
+    const [open, setOpen] = useState(false);
+  
+  
+    const node = useRef();
+    const menuId = "main-menu";
+  
+    useOnClickOutside(node, () => setOpen(false));
+  
+  function reveal(){
+    let reveals = document.querySelectorAll(".reveal");
+  
+    for (var i=0; i < reveals.length; i++)  {
+      let windowHeight = window.innerHeight;
+      let elementTop =
+      reveals[i].getBoundingClientRect().top;
+      let elementVisible = 2;
+  
+      if (elementTop < windowHeight - elementVisible)
+      {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
   return (
+    
     <div>
       {/* <Aboutpage /> */}
       <BrowserRouter>

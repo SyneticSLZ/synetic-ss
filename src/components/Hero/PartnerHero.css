@@ -11,7 +11,7 @@
    /* padding-inline: 10rem; */
     /* border: red 5px solid;  */
  }
- #about-main{
+.aboutq{
    width:100%; 
     display: flex;
     flex-direction: column;
@@ -20,9 +20,12 @@
     /* margin-top: 8rem; */
  }
 .row{
+  width: 100%;
    display: flex;
    margin-top: 3em;
-    flex-direction: row;
+   padding-left: 2em;
+   padding-right: 2em;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border:5px red solid; */
@@ -118,7 +121,7 @@ h1 {
 }
  }
 
- @media(min-width:800px){
+ @media(min-width:1000px){
     .about-image h1 {
        font-size: 4em;
 
@@ -179,7 +182,11 @@ h1 {
  
  
  
- @media(min-width:800px){
+  @media(min-width:800px){
+    .row{
+      display: flex;
+      flex-direction: row;
+    }
   .about{
     width:100%;
     box-sizing: border-box;

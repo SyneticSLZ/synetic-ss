@@ -86,7 +86,7 @@ window.addEventListener("scroll", reveal);
         <Benefit />
 
         
-        <UseCase />
+        {/* <UseCase /> */}
         <TextSlider />
         <BuisnessContact />
         {/* <Contact /> */}

@@ -50,7 +50,7 @@ export default function Footer(){
         
       </div>
     
-      <div className="footer__links col1">
+      {/* <div className="footer__links col1">
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
         <a href="/">Blog</a>
@@ -60,7 +60,7 @@ export default function Footer(){
         <a href="/">Careers</a>
         <a href="/">Support</a>
         <a href="/">Privacy Policy</a>
-      </div>
+      </div> */}
 
       {/* <div class="footer__cta">
         <a href="#" class="button">Request Invite</a>

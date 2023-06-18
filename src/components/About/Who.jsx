@@ -29,18 +29,15 @@ export default function Who(){
         <div className="story">
             <div className="storytitle">OUR STORY</div>
             <div className="storytext">
-                <ul>
-                    <li className="Text">London Based, Few friends trying to make the world a better place</li>
+                    {/* <li className="Text">London Based, Few friends trying to make the world a better place</li>
                     <li className="Text">Felt like web shopping was borning and lacked the exitement of actually getting up and browsing in a store.</li>
                     <li className="Text">We didnt like having to juggle tabs and apps when buying diferent things, such as dog treats and an outfit for friday night.</li>
                     <li className="Text">We wanted to create a space with it all in one place, and that created the same immersive feelings of excitement of shopping in real life.  </li>
-                    <li className="Text">A platform for the Future</li>
-                </ul>
+                    <li className="Text">A platform for the Future</li> */}
+                    <p className="Text">At Synetic, we believe that shopping should be more than just a transaction—it should be an interactive and collaborative experience that brings people together. <br></br>Discover a curated selection of brands in one place, streamlining your experience. Engage with live events, join virtual styling sessions, product demos, and interactive giveways. <br></br>Connect with friends, hosting virtual shopping meet-ups to explore trends and share recommendations.<br></br> Experience a convenient and exciting shopping journey, redefining the way you shop. <br></br><br></br>Join us at Synetic, where collaboration meets convenience for unforgettable moments in fashion and lifestyle.</p>
             </div>
         </div>
-        {/* <div className="storyimg">
-            <img src="" alt="" />
-        </div> */}
+
         <div className="stotyimg">
         
         <img className="reveal"

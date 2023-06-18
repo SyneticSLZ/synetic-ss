@@ -23,7 +23,7 @@ export default function PartnerHero(){
 
     return(
         <animated.div id="about-main" 
-        className="about"
+        className="aboutq"
         >
         
          <div className="row">
