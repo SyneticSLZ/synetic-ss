@@ -147,6 +147,11 @@
     padding-top: 1em;
     color: white;
   }
+  .about-card:hover{
+    /* border: #44107A solid 3px; */
+    /* border-radius: 15px; */
+    
+  }
   .about-card .title-wrapper {
     display: flex;
     align-items: center;

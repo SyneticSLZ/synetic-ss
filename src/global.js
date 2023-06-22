@@ -78,8 +78,8 @@ export const GlobalStyles = createGlobalStyle`
   // background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
   // background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
   // background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
-  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   // background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 200vh;

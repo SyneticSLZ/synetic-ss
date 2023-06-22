@@ -57,17 +57,14 @@ export default function Who(){
           <div class=" nsection-titlee">Need a Creative Product? I can Help You!</div>
 
           <p class="nsection-text">
-            Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive
-            functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
-            curious about
-            learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
-            worked with
-            creative teams, which involves daily stand-ups and communications, source control, and project management.
+
+          Discover a curated selection of brands in one place, streamlining your experience. Engage with live events, join virtual styling sessions, product demos, and interactive giveways. <br></br>Connect with friends, hosting virtual shopping meet-ups to explore trends and share recommendations.<br></br> Experience a convenient and exciting shopping journey, redefining the way you shop.
+          Join us at Synetic, where collaboration meets convenience for unforgettable moments in fashion and lifestyle.
           </p>
 
           <div class="nbtn-group">
 
-            <button class="btn btn-primary">Download cv</button>
+            <button class="btn btn-primary">Learn More</button>
           </div>
 
         </div>

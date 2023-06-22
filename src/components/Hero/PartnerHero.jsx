@@ -13,7 +13,7 @@ export default function PartnerHero(){
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+    const toRotate = [ "Build", "Integrate", "Manage", "Live Events" ];
     const period = 2000;
   
     useEffect(() => {
@@ -61,7 +61,7 @@ export default function PartnerHero(){
         <div className="about-text"
         >
             <h1 className="h1">Your BRAND ON SYNETIC</h1>
-            <p className="h12"> <span className="txt-rotate b" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></p>
+            <p className="h12"> <span className="txt-rotate b" dataPeriod="1000" data-rotate='[ "Build", "Integrate", "Manage", "live Events" ]'><span className="wrap">{text}</span></span></p>
             {/* A new open world multi-planetary system created with endless possibilities for escape, on the blockchain. */}
             <div className="about_body-text reveal">
                 <p><b>Join our growing ecosystem of<br></br> buisnesses in the digital realm of retail</b></p>

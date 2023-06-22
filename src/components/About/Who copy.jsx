@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../About/Nstory.css";
 import {  animated, useSpring } from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import man from "./manw.png"
+import man from "./man.png"
 import starts from "./beautiful-shining-stars-night-sky.jpg"
 import { Md3DRotation } from "react-icons/md";
 
@@ -14,7 +14,7 @@ export default function NStory(){
         <div class="container">
 
           <figure class="about-banner" data-reveal="left">
-            <img src={man} width="380" height="100%" loading="lazy" alt="about banner"
+            <img src={man} width="380" height="50%" loading="lazy" alt="about banner"
               class="w-100 img-1" />
 {/* 
             <img src={starts} width="347" height="349" loading="lazy" alt="about banner"
