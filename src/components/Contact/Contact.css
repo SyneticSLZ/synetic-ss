@@ -10,8 +10,8 @@
 #Offer{
   width:100%;
   display:flex;
-  justify-content: left;
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding-left:3rem ;
   /* background-color: var(--clr-dark); */
@@ -363,14 +363,14 @@ align-items: center;
         display:flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         /* background-color: var(--clr-dark); */
         margin-top: 4rem;
     }
     #Offer{
-      width:50%;
+      width:100%;
       display:flex;
-      justify-content: left;
+      justify-content: center;
       /* align-items: center; */
       flex-direction: column;
       padding-left:3rem ;

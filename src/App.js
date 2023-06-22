@@ -1,6 +1,7 @@
 import React, { useState, useContext, useRef } from "react";
 import {BrowserRouter, Routes, Route, Router, Link} from 'react-router-dom'
 import { MouseContext } from "./context/mouse-context";
+import { useStateContext } from "./context/contextProvider";
 // import FocusLock from 'react-focus-lock';
 import { useOnClickOutside } from './hooks/useOnClickOutside';
 import  Home from "./pages/Home"
@@ -8,9 +9,13 @@ import Aboutpage from "./pages/About";
 import Contactpage from "./pages/Contact";
 import Register from "./pages/Register"
 import Partner from "./pages/Partner"
+import Dashboard from "./pages/Dashboard";
+
+import { Navbar, Footer, Sidebar, ThemeSettings } from './Dash-Components';
+import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './Dashboard-pages';
 // import Checkout from "./pages/Checkout"
 export default function App() {
-
+    const { activeMenu } = useStateContext();
   
   
     let Parallax;
@@ -47,7 +52,31 @@ export default function App() {
       {/* <Aboutpage /> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/synetic-ss" element={<Home />} />
+        <Route path="/synetic-ss" element={<Home />} />
+          <Route path="/synetic-ss/Dashboard" element={<Dashboard />} >
+                {/* Dashboard */}
+                <Route path="/synetic-ss/Dashboard" element={(<Ecommerce />)} />
+                {/* pages  */}
+                <Route path="/synetic-ss/Dashboard/orders" element={<Orders />} />
+                <Route path="/synetic-ss/Dashboard/employees" element={<Employees />} />
+                <Route path="/synetic-ss/Dashboard/customers" element={<Customers />} />
+
+                {/* apps  */}
+                <Route path="/synetic-ss/Dashboard/kanban" element={<Kanban />} />
+                <Route path="/synetic-ss/Dashboard/editor" element={<Editor />} />
+                <Route path="/synetic-ss/Dashboard/calendar" element={<Calendar />} />
+                <Route path="/synetic-ss/Dashboard/color-picker" element={<ColorPicker />} />
+
+                {/* charts  */}
+                <Route path="/synetic-ss/Dashboard/line" element={<Line />} />
+                <Route path="/synetic-ss/Dashboard/area" element={<Area />} />
+                <Route path="/synetic-ss/Dashboard/bar" element={<Bar />} />
+                <Route path="/synetic-ss/Dashboard/pie" element={<Pie />} />
+                <Route path="/synetic-ss/Dashboard/financial" element={<Financial />} />
+                <Route path="/synetic-ss/Dashboard/color-mapping" element={<ColorMapping />} />
+                <Route path="/synetic-ss/Dashboard/pyramid" element={<Pyramid />} />
+                <Route path="/synetic-ss/Dashboard/stacked" element={<Stacked />} />
+          </Route>
           <Route path='/synetic-ss/contact' element={<Contactpage />} />
           <Route path='/synetic-ss/home' element={<Home />} />
           <Route path="/synetic-ss/about" element={<Aboutpage />} />

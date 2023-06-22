@@ -32,7 +32,9 @@ const Menu = ({ open, ...props }) => {
         </a>
       <a href="#roadmap" tabIndex={tabIndex}>
         <span aria-hidden="true"></span>
-        Roadmap
+        <Scrolllink smooth={true} duration={3000}>
+            <Link to="/synetic-ss/Ecommerce" To="/synetic-ss/Ecommerce">Dashboard</Link>
+          </Scrolllink>
         </a>
 
         <div className="social-list">

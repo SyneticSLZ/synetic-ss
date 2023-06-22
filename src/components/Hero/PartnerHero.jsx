@@ -1,28 +1,57 @@
 import React, { useEffect, useState } from "react";
 import "../Hero/PartnerHero.css";
+import { Container, Row, Col } from "react-bootstrap";
+import { ArrowRightCircle } from 'react-bootstrap-icons';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 import {  animated, useSpring } from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 export default function PartnerHero(){
-    const style1 = useSpring({
-        from: {
-           opacity:0, marginTop: -100 },
-        to: {  
-            opacity:1, marginTop: 0   },
-        config: { duration:1500 }
-    
-    });
-    const [offsetY, setOffsetY]=  useState(0);
-    const handleScroll =() => setOffsetY(window.pageYOffset);
-    
-      useEffect(()=>{
-      window.addEventListener("scroll", handleScroll);
-      return() => window.removeEventListener("scroll", handleScroll);
-    },[]);
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [text, setText] = useState('');
+    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [index, setIndex] = useState(1);
+    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+    const period = 2000;
+  
+    useEffect(() => {
+      let ticker = setInterval(() => {
+        tick();
+      }, delta);
+  
+      return () => { clearInterval(ticker) };
+    }, [text])
+  
+    const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+  
+      setText(updatedText);
+  
+      if (isDeleting) {
+        setDelta(prevDelta => prevDelta / 2);
+      }
+  
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setIndex(prevIndex => prevIndex - 1);
+        setDelta(period);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setIndex(1);
+        setDelta(500);
+      } else {
+        setIndex(prevIndex => prevIndex + 1);
+      }
+    }
    
 
     return(
-        <animated.div id="about-main" 
+        <div id="about-main" 
         className="aboutq"
         >
         
@@ -31,25 +60,17 @@ export default function PartnerHero(){
 
         <div className="about-text"
         >
-            <div className="hhu"><h1>Your BRAND ON SYNETIC</h1></div> 
-            <p className="highlight-text"> Join our growing ecosystem of<br></br> buisnesses in the digital realm of retail</p>
+            <h1 className="h1">Your BRAND ON SYNETIC</h1>
+            <p className="h12"> <span className="txt-rotate b" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></p>
             {/* A new open world multi-planetary system created with endless possibilities for escape, on the blockchain. */}
             <div className="about_body-text reveal">
+                <p><b>Join our growing ecosystem of<br></br> buisnesses in the digital realm of retail</b></p>
             <p><b >EXPLORE</b>  A whole new world</p>
             <p><b >REACH</b>   A whole new untapped market</p>
             <p>EXPLORE. BUILD. OWN. CREATE.</p>
-            {/* <p>Live a second digital reality where nothing is off limits. </p>
-            <p> Use your Sinister Soul NFTs as playable characters</p>
-            <p>EXPLORE. BUILD. OWN. EVOLVE.</p> */}
+
             </div>
             <br />
-
-            {/* <div className="about_body-text about_body-text_highlight">
-            <p>Live a second digital reality where nothing is off limits. </p>
-            <p> Use your Sinister Soul NFTs as playable characters</p>
-            <p>EXPLORE. BUILD. OWN. EVOLVE.</p>
-            </div> */}
-       
         <button className="about-btn">LEARN MORE</button>
         </div>
         <div className="about-image">
@@ -60,6 +81,6 @@ export default function PartnerHero(){
         src="https://cdn.discordapp.com/attachments/980829870651240478/980834767689883658/Sci_Fi_Picture_Blender.png" alt="" />
         </div>
         </div>
-        </animated.div>
+        </div>
     )
 }

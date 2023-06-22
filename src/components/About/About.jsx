@@ -23,7 +23,7 @@ export default function About(){
 
     return(
         <animated.div id="about-main" className="about">
-        <div className="hhu"><h1>"EMBRACE THE FUTURE"</h1></div> 
+        <div className="h1"><h1>"EMBRACE THE FUTURE"</h1></div> 
          <div className="row23">
         <div className="about-image">
         

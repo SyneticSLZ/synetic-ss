@@ -20,6 +20,7 @@ import Benefit from "../components/Benefitss/Benefit";
 import DotRing from "../components/DotRing/DotRing";
 import { MouseContext } from "../context/mouse-context";
 import PartnerHero from "../components/Hero/PartnerHero";
+import { Int } from "../components/Banner/Integrate";
 // import FocusLock from 'react-focus-lock';
 import {  Menu } from '../components';
 import { Burger } from '../components';
@@ -29,6 +30,8 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../global';
 import { theme } from '../theme';
 import { Parallax, ParallaxLayer } from 'react-spring';
+import Banner from "../components/Banner/Banner";
+import Manage from "../components/Banner/Manage";
 
 export default function Contactpage() {
   let Parallax;
@@ -61,7 +64,7 @@ function reveal(){
 window.addEventListener("scroll", reveal);
 
   return(
-    // <ThemeProvider theme={ theme }>
+    <ThemeProvider theme={ theme }>
      <>
       <GlobalStyles />
       <DotRing />
@@ -82,7 +85,12 @@ window.addEventListener("scroll", reveal);
       {/* </div> */}
 
       <Navbar />
-        <PartnerHero />
+      <H1 />
+
+      <PartnerHero />
+      <Banner />
+      <Int />
+      <Manage />
         <Benefit />
 
         

@@ -25,6 +25,8 @@ import { GlobalStyles } from '../global';
 import { theme } from '../theme';
 import { Parallax, ParallaxLayer } from 'react-spring';
 import Who from "../components/About/Who";
+import NStory from "../components/About/Who copy";
+
 
 export default function Aboutpage() {
   let Parallax;
@@ -80,10 +82,12 @@ window.addEventListener("scroll", reveal);
       </div>
       <Navbar />
     <Hero />
+
+    {/* <NStory /> */}
     <Who />
       <About />
       <TextSlider />
-         
+         <NStory />
          <Oasis />
          <Team />
          {/* <ImageSlider />

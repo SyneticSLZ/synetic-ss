@@ -32,11 +32,22 @@
 }
  .about_body-text p{
    color: grey;
+   padding-left: 2rem;
  }
  .about_body-text b{
    font-weight: bold;
    color: white;
  }
+ .about_body-text:before{
+  content: "";
+  display: block;
+  width: 2.5px;
+  height: 10rem;
+  background: var(--clr-accent);
+  left: 0;
+  top: 0%;
+  position: absolute;
+}
  .about-image{
    height: fit-content;
    width: 100%;
@@ -72,7 +83,7 @@
  color: var(--clr-accent);
  font-family: var(--ff-secondary);
  font-weight: 900;
- font-size: larger;
+ font-size: 20px;
  margin-top: 1rem;
  position: relative;
  padding-left: 2rem;
@@ -89,11 +100,17 @@
          position: absolute;
  }
  
+ .h12{
+  font-family:var(--ff-primary);
+     font-size:2rem;
+    /* margin-bottom: 1em; */
+     letter-spacing: 2px;
+     color:var(--clr-accent);
+ }
  
  
  
- 
-h1 {
+.h1 {
     /* margin-bottom: 4rem;
     font-family: Audiowide, sans-serif;
     color: var(--clr-dark);
