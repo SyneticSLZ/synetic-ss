@@ -49,7 +49,7 @@ export default function Oasis(){
  </p>
 <p className="reveal sub-text">  VISUALISE YOUR PRODUCT IN 3D 
  </p>
-<p className="reveal sub-text ">A WHOLE NEW WAY TO SHOP AND SELL
+<p className="reveal sub-text "> A WHOLE NEW WAY TO SHOP AND SELL
  </p>
 <p className="reveal sub-text"> UNIQUE EVENTS EXCLUSIVE TO SYNETICX
  </p>

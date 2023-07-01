@@ -91,15 +91,15 @@ window.addEventListener("scroll", reveal);
       <Banner />
       <Int />
       <Manage />
-        <Benefit />
+        {/* <Benefit /> */}
 
         
         {/* <UseCase /> */}
         <TextSlider />
-        <BuisnessContact />
+        <Contact />
         {/* <Contact /> */}
          <Footer /> 
          </>
-    // </ThemeProvider>
+     </ThemeProvider>
          );
 }

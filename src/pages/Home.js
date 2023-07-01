@@ -1,4 +1,5 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
+import { loadStripe } from "@stripe/stripe-js";
 import Navbar from "../components/Navbar/Navbar"
 import Team from "../components/Team/Team"
 // import Syneverse from "./components/Syneverse/Syneverse"
@@ -25,6 +26,7 @@ import { theme } from '../theme';
 import NavbarHero from "../components/Hero/NavbarHero"
 import { Parallax, ParallaxLayer } from 'react-spring';
 // import IFRAME from "../components/Hero/HeroHome";
+
 
 export default function Home() {
   let Parallax;
@@ -55,7 +57,6 @@ function reveal(){
   }
 }
 window.addEventListener("scroll", reveal);
-
   return( 
     <ThemeProvider theme={ theme }>
      <>
@@ -77,10 +78,14 @@ window.addEventListener("scroll", reveal);
           {/* </FocusLock> */}
       </div>
 
-         <NavbarHero />
+        <NavbarHero />
          
-         <Home123 />
+          {/* <Home123 />  */}
+         {/* <input placeholder="Message..."/>
+         <button onClick={redirectToCheckout}
+        disabled={isLoading}>Send Message</button> */}
          </>
     </ThemeProvider>
          );
 }
+

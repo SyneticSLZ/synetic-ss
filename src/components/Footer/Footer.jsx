@@ -72,10 +72,6 @@ export default function Footer(){
     <div className="footer__copyright">
         &copy; Synetic LTD. All Rights Reserved.
       </div>
-    <div className="attribution">
-      <a href="/">Coded by PinkPistachioButterfly</a>.
-      
-    </div>
   </footer>)
  
 }

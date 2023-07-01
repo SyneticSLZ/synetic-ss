@@ -52,9 +52,9 @@ export default function Who(){
 
         <div class="nabout-content nsection-content">
 
-          <p class="nsection-subtitle">Our Story</p>
+          {/* <p class="nsection-subtitle">Our Story</p> */}
 
-          <div class=" nsection-titlee">Need a Creative Product? I can Help You!</div>
+          <div class=" nsection-titlee">Our Story</div>
 
           <p class="nsection-text">
 

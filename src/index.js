@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import MouseContextProvider from "./context/mouse-context";
 import { ContextProvider } from './context/contextProvider';
+import { AuthContextProvider } from './context/AuthContext';
 // import './index.css';
 import App from './App';
 
@@ -11,7 +12,9 @@ root.render(
   <React.StrictMode>
     <MouseContextProvider>
       <ContextProvider>
-        <App />
+          <AuthContextProvider >
+           <App />
+          </AuthContextProvider>
         </ContextProvider>
     
     </MouseContextProvider>

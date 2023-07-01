@@ -5,6 +5,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import man from "./man.png"
 import starts from "./beautiful-shining-stars-night-sky.jpg"
 import { Md3DRotation } from "react-icons/md";
+import { GiWorld, GiFreedomDove } from "react-icons/gi"
 
 export default function NStory(){
    
@@ -23,10 +24,10 @@ export default function NStory(){
 
           <div class="about-content" data-reveal="right">
 
-            <p class="section-subtitle has-before" id="about-label">What We Do!</p>
+            <p class="section-subtitle has-before" id="about-label">THE SPACE</p>
 
             <h2 class="h2  section-text">
-              Our mission is to put an electric vehicle charge
+              Our mission.
             </h2>
 {/* 
             <p class="section-title">
@@ -39,13 +40,13 @@ export default function NStory(){
               <div class="about-card">
 
                 <div class="title-wrapper">
-                  <Md3DRotation className="icon"/>
+                  <GiWorld className="icon"/>
 
-                  <h3 class="card-title">Zero contact travel</h3>
+                  <h3 class="card-title">A whole new reality</h3>
                 </div>
 
                 <p class="card-text">
-                  We love our customers and we love the way they come.
+                  Where anyone and anyone can be anything they desire, with no limits .
                 </p>
 
               </div>
@@ -54,9 +55,9 @@ export default function NStory(){
 
                 <div class="title-wrapper">
                     
-                <Md3DRotation className="icon"/>
+                <GiFreedomDove className="icon"/>
 
-                  <h3 class="card-title">No Driving License</h3>
+                  <h3 class="card-title">Freedom of expression</h3>
                 </div>
 
                 <p class="card-text">
@@ -72,12 +73,12 @@ export default function NStory(){
               <li class="about-item">
               <Md3DRotation className="icon"/>
 
-                <span class="span">Detachable battery, take home and charge in 3 hours.</span>
+                <span class="span">SHOP FOR EXCLUSIVE BRANDS ONLY ON OUR PLATFORM</span>
               </li>
 
               <li class="about-item">
               <Md3DRotation className="icon"/>
-                <span class="span">Enjoy a hassle-free ride by charging just for 3 hours.</span>
+                <span class="span">UNIQUE EVENTS EXCLUSIVE TO SYNETIC.</span>
               </li>
 
             </ul>

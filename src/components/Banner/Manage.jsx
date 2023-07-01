@@ -52,23 +52,23 @@ export const Manage = () => {
     <Container>
       <Row className="aligh-items-center">
         <Col xs={12} md={6} xl={7}>
-          <TrackVisibility>
-            {({ isVisible }) =>
-            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-              <span className="tagline">Welcome to my Portfolio</span>
+          {/* <TrackVisibility> */}
+            {/* {({ isVisible }) => */}
+             {/* <div className={isVisible ? "animate__animated animate__fadeIn" : ""}> */}
+              {/* <span className="tagline">Welcome to my Portfolio</span> */}
               <h1>MANAGE</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Manage all your buisness operations through our dashboard, providing you with analytics and monthy reports for your buisness. View your customers ,fufill your orders see your profit, all in one place.</p>
                 <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-            </div>}
-          </TrackVisibility>
+            {/* </div>} */}
+          {/* </TrackVisibility> */}
         </Col>
         <Col xs={12} md={6} xl={5}>
-          <TrackVisibility>
-            {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__zoomIn" : ""} >
+          {/* <TrackVisibility> */}
+            {/* {({ isVisible }) => */}
+              {/* <div className={isVisible ? "animate__animated animate__zoomIn" : ""} > */}
                 <img  className='image'src={headerImg} alt="Header Img"/>
-              </div>}
-          </TrackVisibility>
+              {/* </div> */}
+          {/* </TrackVisibility> */}
         </Col>
       </Row>
     </Container>

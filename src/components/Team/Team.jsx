@@ -68,9 +68,15 @@ export default function Team(){
                  </div> */}
              </div>
             <div className="team-container reveal">
-                <div className="team__box">
+
+
+
+
+
+
+        <div className="team__box">
             <div className="team__box-img1">
-                <img src={muff} alt=""/>
+                <img src={muff} alt="" height="200px" width="200px" />
             </div>
             <div className="team__title">
                 <p>Ro Mehmi</p></div>
@@ -85,9 +91,23 @@ export default function Team(){
                 
         </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div className="team__box">
-            <div className="team__box-img2">
-                <img src={seamus}alt="" height="50%" width='50%'/>
+            <div className="team__box-img1">
+                <img src={seamus}alt="" height="200px" width="200px"/>
             </div>
             <div className="team__title">
                 <p>Alexander Macgregor</p></div>

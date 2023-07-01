@@ -88,7 +88,7 @@ window.addEventListener("scroll", reveal);
       <About />
       <TextSlider />
          <NStory />
-         <Oasis />
+         {/* <Oasis /> */}
          <Team />
          {/* <ImageSlider />
          <ImageSlider2 /> */}

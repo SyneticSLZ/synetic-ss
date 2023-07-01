@@ -60,14 +60,12 @@ export default function PartnerHero(){
 
         <div className="about-text"
         >
-            <h1 className="h1">Your BRAND ON SYNETIC</h1>
+            <h1 className="h1">LET’S BUILD THE THE FUTURE TOGETHER</h1>
             <p className="h12"> <span className="txt-rotate b" dataPeriod="1000" data-rotate='[ "Build", "Integrate", "Manage", "live Events" ]'><span className="wrap">{text}</span></span></p>
             {/* A new open world multi-planetary system created with endless possibilities for escape, on the blockchain. */}
-            <div className="about_body-text reveal">
-                <p><b>Join our growing ecosystem of<br></br> buisnesses in the digital realm of retail</b></p>
-            <p><b >EXPLORE</b>  A whole new world</p>
-            <p><b >REACH</b>   A whole new untapped market</p>
-            <p>EXPLORE. BUILD. OWN. CREATE.</p>
+            <div className="about_body-text2 reveal">
+                <p><b>We are here to help and assist all types of buisnesses and creators, Brands, studios, independent creators, you are all part of the syentic Platofrm.</b></p>
+                <p><b>Expand to a new global market, and sell to every corner of the world.</b></p>
 
             </div>
             <br />

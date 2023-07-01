@@ -77,9 +77,13 @@ export const GlobalStyles = createGlobalStyle`
   // width:100%;
   // background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
   // background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  // background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  // background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
   // background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+  // background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
   // background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  // background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 200vh;
