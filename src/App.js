@@ -77,8 +77,8 @@ export default function App() {
                 <Route path="/synetic-ss/Dashboard" element={ <RequireAuth> (<Ecommerce />) </RequireAuth>} />
                 {/* pages  */}
                 <Route path="/synetic-ss/Dashboard/orders" element={ <RequireAuth> <Orders /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/employees" element={ <RequireAuth> <Employees /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/customers" element={ <RequireAuth> <Customers /></RequireAuth>} />
+                <Route path="/synetic-ss/Dashboard/customers" element={ <RequireAuth> <Employees /></RequireAuth>} />
+                <Route path="/synetic-ss/Dashboard/items" element={ <RequireAuth> <Customers /></RequireAuth>} />
 
                 {/* apps  */}
                 <Route path="/synetic-ss/Dashboard/kanban" element={ <RequireAuth> <Kanban /></RequireAuth>} />
@@ -90,7 +90,8 @@ export default function App() {
                 <Route path="/synetic-ss/Dashboard/line" element={ <RequireAuth> <Line /></RequireAuth>} />
                 <Route path="/synetic-ss/Dashboard/employees/single" element={ <RequireAuth> <Single /></RequireAuth>} />
                 <Route path="/synetic-ss/Dashboard/bar" element={ <RequireAuth> <Bar /></RequireAuth>} />
-                 <Route path="/synetic-ss/Dashboard/new" element={<New />} />
+                 <Route path="/synetic-ss/Dashboard/customers/new" element={<New inputs = {userInputs} title="Add New User" />} />
+                 <Route path="/synetic-ss/Dashboard/items/new" element={<New inputs = {productInputs} title="Add New Product" />} />
                  {/* <Route 
                  path="/synetic-ss/Dashboard/new"
                 element={<New inputs={productInputs} title="Add New Product" />}
@@ -115,3 +116,32 @@ export default function App() {
     </div>
          );
 }
+
+// import React from "react";
+// import { Unity, useUnityContext } from "react-unity-webgl";
+
+// export default function App() {
+//   const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
+//     loaderUrl: "build/myunityapp.loader.js",
+//     dataUrl: "build/myunityapp.data",
+//     frameworkUrl: "build/myunityapp.framework.js",
+//     codeUrl: "build/myunityapp.wasm",
+//   });
+
+//   // We'll round the loading progression to a whole number to represent the
+//   // percentage of the Unity Application that has loaded.
+//   const loadingPercentage = Math.round(loadingProgression * 100);
+
+//   return (
+//     <div className="container">
+//       {isLoaded === false && (
+//         // We'll conditionally render the loading overlay if the Unity
+//         // Application is not loaded.
+//         <div className="loading-overlay">
+//           <p>Loading... ({loadingPercentage}%)</p>
+//         </div>
+//       )}
+//       <Unity className="unity" unityProvider={unityProvider} />
+//     </div>
+//   );
+// }

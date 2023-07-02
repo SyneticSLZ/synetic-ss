@@ -1,7 +1,8 @@
 import React, { useEffect, useState} from "react";
 // import "../Hero/Hero.css"
 import {  animated, useSpring } from 'react-spring';
-
+// import React from "react";
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 export default function Home123(){
 
@@ -23,16 +24,23 @@ const style1 = useSpring({
 
 // });
 
-
-
+const { unityProvider } = useUnityContext({
+    loaderUrl: "build/myunityapp.loader.js",
+    dataUrl: "build/myunityapp.data",
+    frameworkUrl: "build/myunityapp.framework.js",
+    codeUrl: "build/myunityapp.wasm",
+  });
     return(
         
-        <animated.div id="hero" className={`container ${hideScrollbar ? 'no-scrollbar' : ''}`} style={ style1 }>
-               <script src="https://app.vagon.io/vagonsdk.js"></script> 
-<div style={{
-    overflow: 'hidden'}}>
-<iframe class="hvideo" id="vagonFrame" allow="microphone  *; clipboard-read *; clipboard-write *; encrypted-media *;accelerometer; autoplay; gyroscope; controls;" src="https://streams.vagon.io/streams/805c2d1b-87b4-4c36-9922-454ad49f74ff"
-      style={{ position: 'absolute', top: '100px', left: '0', width: '100%', height: '89vh' }}/>
-               </div> </animated.div>
+//         <animated.div id="hero" className={`container ${hideScrollbar ? 'no-scrollbar' : ''}`} style={ style1 }>
+//                <script src="https://app.vagon.io/vagonsdk.js"></script> 
+// <div style={{
+//     overflow: 'hidden'}}>
+// <iframe class="hvideo" id="vagonFrame" allow="microphone  *; clipboard-read *; clipboard-write *; encrypted-media *;accelerometer; autoplay; gyroscope; controls;" src="https://streams.vagon.io/streams/805c2d1b-87b4-4c36-9922-454ad49f74ff"
+//       style={{ position: 'absolute', top: '100px', left: '0', width: '100%', height: '89vh' }}/>
+//                </div> </animated.div>
+{/* <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }} />
+ */}
+ 
     )
 }

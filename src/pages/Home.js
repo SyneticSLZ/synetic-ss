@@ -15,6 +15,7 @@ import TextSlider from "../components/TextSlider/TextSlider";
 import ImageSlider2 from "../components/ImageSlider2/ImageSlider2";
 import Oasis from "../components/Oasis/Oasis";
 import DotRing from "../components/DotRing/DotRing";
+import UnityWebGLComponent from "../components/unity";
 import { MouseContext } from "../context/mouse-context";
 // import FocusLock from 'react-focus-lock';
 import {  Menu } from '../components';
@@ -79,7 +80,7 @@ window.addEventListener("scroll", reveal);
       </div>
 
         <NavbarHero />
-         
+         <UnityWebGLComponent />
           {/* <Home123 />  */}
          {/* <input placeholder="Message..."/>
          <button onClick={redirectToCheckout}
