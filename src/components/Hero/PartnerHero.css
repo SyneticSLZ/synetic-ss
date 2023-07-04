@@ -69,10 +69,11 @@
  .about-image{
    height: fit-content;
    width: 100%;
+   /* align-self: center; */
    /* border:5px red solid; */
     color: rgb(255, 255, 255);
     flex-direction: column;
-    /* padding-left: 10em; */
+    padding-left: 2em;
     /* border-radius: 50%; */
 /* margin-bottom: 3rem; */
     
@@ -81,6 +82,8 @@
  .about-image img{
     /* object-fit:cover; */
     border-radius: 5%;
+    align-self: center;
+    /* padding-left: 3em; */
  }
  
  .about-text{
@@ -107,17 +110,17 @@
  padding-left: 2rem;
  }
 
- .highlight-text:before{
+ /* .highlight-text:before{
          content: "";
          display: block;
          width: 2.5px;
-         height: 4.5rem;
+         height: 7rem;
          background: var(--clr-accent);
          left: 0;
          top: 0%;
          position: absolute;
  }
- 
+  */
  .h12{
   font-family:var(--ff-primary);
      font-size:2rem;

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "./header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import 'animate.css';
+// import './banner.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -58,7 +58,7 @@ export const Banner = () => {
               {/* <span className="tagline">Welcome to my Portfolio</span> */}
               <h1>{`BUILD`} </h1>
                 <p>We will work closely and swiftly with you to build you a virtual shop that aligns with your brand goals in a streamlined process.You will work closely with out capable team, dedicated to making your vision a reality. Schedule a call with us today so we can help you design every small detail of your store.</p>
-                <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
             {/* </div>} */}
           {/* </TrackVisibility> */}
         </Col>
@@ -66,7 +66,7 @@ export const Banner = () => {
           {/* <TrackVisibility> */}
             {/* {({ isVisible }) => */}
               {/* // <div className={isVisible ? "animate__animated animate__zoomIn" : ""} > */}
-                <img  className='image'src={headerImg} alt="Header Img"/>
+                <img  className='image'src="https://cdn.discordapp.com/attachments/943100817148366888/1121921516683145287/image.png" alt="Header Img"/>
               {/* </div>} */}
           {/* </TrackVisibility> */}
         </Col>

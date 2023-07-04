@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef} from "react";
 import "../Hero/Hero.css"
 import {  animated, useSpring } from 'react-spring';
-import video from './Video6.mp4'
+import video from './VarityShopAccFinal_(73).mp4'
 export default function Hero(){
 
 

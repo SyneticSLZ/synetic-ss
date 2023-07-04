@@ -69,14 +69,14 @@ export default function PartnerHero(){
 
             </div>
             <br />
-        <button className="about-btn">LEARN MORE</button>
+        {/* <button className="about-btn">LEARN MORE</button> */}
         </div>
         <div className="about-image">
         
         <img className="reveal"
         width="600" 
         height="400" 
-        src="https://cdn.discordapp.com/attachments/980829870651240478/980834767689883658/Sci_Fi_Picture_Blender.png" alt="" />
+        src="https://cdn.discordapp.com/attachments/943100817148366888/1121518318428373072/IntoSyneticX.png" alt="" />
         </div>
         </div>
         </div>

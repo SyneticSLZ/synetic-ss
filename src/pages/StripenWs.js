@@ -37,6 +37,7 @@ const StripeCheckout = () => {
 
   const [stripeError, setStripeError] = useState(null);
   const [isLoading, setLoading] = useState(false);
+  
   const item = {
     price: "price_1NOjFSKJeZAyw8f4LgHP4tyT",
     quantity: 1

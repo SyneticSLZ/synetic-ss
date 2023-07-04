@@ -31,14 +31,14 @@ import { Parallax, ParallaxLayer } from 'react-spring';
 
 export default function Home() {
   let Parallax;
-  const { cursorChangeHandler } = useContext(MouseContext);
-  const [open, setOpen] = useState(false);
+  // const { cursorChangeHandler } = useContext(MouseContext);
+  // const [open, setOpen] = useState(false);
 
 
   const node = useRef();
   const menuId = "main-menu";
 
-  useOnClickOutside(node, () => setOpen(false));
+  // useOnClickOutside(node, () => setOpen(false));
 
 function reveal(){
   let reveals = document.querySelectorAll(".reveal");
@@ -65,23 +65,23 @@ window.addEventListener("scroll", reveal);
       <DotRing />
 
       <div className="container">
-        <div
+        {/* <div
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
-        </div>
+        </div> */}
       </div>
 
       <div ref={node}>
           {/* <FocusLock disabled={!open}> */}
-            <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-            <Menu open={open} setOpen={setOpen} id={menuId} />
+            {/* <Burger open={open} setOpen={setOpen} aria-controls={menuId} /> */}
+            {/* <Menu open={open} setOpen={setOpen} id={menuId} /> */}
           {/* </FocusLock> */}
       </div>
 
         <NavbarHero />
-         <UnityWebGLComponent />
-          {/* <Home123 />  */}
+         {/* <UnityWebGLComponent /> */}
+          <Home123 /> 
          {/* <input placeholder="Message..."/>
          <button onClick={redirectToCheckout}
         disabled={isLoading}>Send Message</button> */}

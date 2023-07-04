@@ -10,14 +10,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <MouseContextProvider>
+    {/* <MouseContextProvider> */}
       <ContextProvider>
-          <AuthContextProvider >
+          {/* <AuthContextProvider > */}
            <App />
-          </AuthContextProvider>
+          {/* </AuthContextProvider> */}
         </ContextProvider>
     
-    </MouseContextProvider>
+    {/* </MouseContextProvider> */}
   </React.StrictMode>
 
 );

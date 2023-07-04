@@ -4,7 +4,8 @@ import {  animated, useSpring } from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import man from "./man.png"
 import starts from "./beautiful-shining-stars-night-sky.jpg"
-import { Md3DRotation } from "react-icons/md";
+import { MdEventAvailable } from "react-icons/md";
+import { HiShoppingBag } from "react-icons/hi";
 import { GiWorld, GiFreedomDove } from "react-icons/gi"
 
 export default function NStory(){
@@ -23,12 +24,13 @@ export default function NStory(){
           </figure>
 
           <div class="about-content" data-reveal="right">
-
+          <div className="title">
             <p class="section-subtitle has-before" id="about-label">THE SPACE</p>
-
+            
             <h2 class="h2  section-text">
               Our mission.
             </h2>
+            </div>
 {/* 
             <p class="section-title">
               Charge your electric vehicle at home using one of our smart home char ge solutions or gain access to over
@@ -71,23 +73,23 @@ export default function NStory(){
             <ul class="about-list">
 
               <li class="about-item">
-              <Md3DRotation className="icon"/>
+              <HiShoppingBag className="icon"/>
 
                 <span class="span">SHOP FOR EXCLUSIVE BRANDS ONLY ON OUR PLATFORM</span>
               </li>
 
               <li class="about-item">
-              <Md3DRotation className="icon"/>
+              <MdEventAvailable className="icon"/>
                 <span class="span">UNIQUE EVENTS EXCLUSIVE TO SYNETIC.</span>
               </li>
 
             </ul>
 
-            <a href="#" class="btn btn-primary">
+            {/* <a href="#" class="btn btn-primary">
               <span class="span">Read More</span>
 
               <Md3DRotation className="icon"/>
-            </a>
+            </a> */}
 
           </div>
 

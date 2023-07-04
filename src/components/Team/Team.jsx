@@ -2,8 +2,9 @@ import React, { useEffect, useState} from "react";
 import TeamBox from "../TeamBox/TeamBox"
 import "../Team/Team.css"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import muff from "./M.png"
-import seamus from "./S.png"
+import muff from "./M.jpeg"
+import seamus from "./S.jpg"
+import { BsTwitter } from "react-icons/bs"
 export default function Team(){
 
 
@@ -79,17 +80,26 @@ export default function Team(){
                 <img src={muff} alt="" height="200px" width="200px" />
             </div>
             <div className="team__title">
-                <p>Ro Mehmi</p></div>
-                <h2></h2>
+                <p>Rohan Mehmi</p></div>
+                <h2>Lead software dev</h2>
+                <div className="team__text">
+                <p>Lighting the fires</p>
+                </div>
+                <div className="icons">
                 <div className="team-discord">
                 <a className="social-list__link" href="https://twitter.com/_sinister_souls">
                             <i className="fab fa-discord"></i>
-                        </a>
+                            {/* <BsTwitter className="icon" /> */}
+                </a>
                 </div>
-            <div className="team__text">
-                <p>Lead writer of Dr Szink. SciFi junkie. Blockchain Dev since 2017</p>
-                
-        </div>
+                <div className="team-discord">
+                <a className="social-list__link" href="https://twitter.com/_sinister_souls">
+                            <i className="fab fa-discord"></i>
+                            {/* <BsTwitter className="icon" /> */}
+                </a>
+                </div>
+                </div>
+            
         </div>
 
 
@@ -111,16 +121,25 @@ export default function Team(){
             </div>
             <div className="team__title">
                 <p>Alexander Macgregor</p></div>
-                <h2></h2>
-                <div className="team-discord">
-                <a className="social-list__link" href="https://twitter.com/_sinister_souls">
-                            <i className="fab fa-discord"></i>
-                        </a>
-                </div>
+                <h2>Sales Expert</h2>
             <div className="team__text">
                 <p>Stopping the place from burning down</p>
                 
         </div>
+        <div className="icons">
+                <div className="team-discord">
+                <a className="social-list__link" href="https://twitter.com/_sinister_souls">
+                            <i className="fab fa-discord"></i>
+                            {/* <BsTwitter className="icon" /> */}
+                </a>
+                </div>
+                <div className="team-discord">
+                <a className="social-list__link" href="https://twitter.com/_sinister_souls">
+                            <i className="fab fa-discord"></i>
+                            {/* <BsTwitter className="icon" /> */}
+                </a>
+                </div>
+                </div>
         </div>
                 
         

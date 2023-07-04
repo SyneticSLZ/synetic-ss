@@ -1,8 +1,5 @@
 import React, { useState, useContext, useRef, useEffect } from "react";
 import {BrowserRouter, Routes, Route, Router, Link, Navigate} from 'react-router-dom'
-import { MouseContext } from "./context/mouse-context";
-import { useStateContext } from "./context/contextProvider";
-import { AuthContext } from "./context/AuthContext";
 // import FocusLock from 'react-focus-lock';
 import { useOnClickOutside } from './hooks/useOnClickOutside';
 import  Home from "./pages/Home"
@@ -10,23 +7,20 @@ import Aboutpage from "./pages/About";
 import Contactpage from "./pages/Contact";
 import Register from "./pages/Register"
 import Partner from "./pages/Partner"
-import Dashboard from "./pages/Dashboard";
-import New from "./Dashboard-pages/New/new";
 import StripeCheckout from "./pages/StripenWs"
-import Single from "./Dash-Components/single/single";
-import Login from "./pages/login";
+
 import { productInputs, userInputs } from "./formSource";
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from './Dash-Components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './Dashboard-pages';
+// import { Navbar, Footer, Sidebar, ThemeSettings } from './Dash-Components';
+// import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './Dashboard-pages';
 // import { AuthContext } from "./context/AuthContext";
 // import Checkout from "./pages/Checkout"
 export default function App() {
-    const { activeMenu } = useStateContext();
-    const {currentUser} = useContext(AuthContext)
+    // const { activeMenu } = useStateContext();
+    // const {currentUser} = useContext(AuthContext)
 
     let Parallax;
-    const { cursorChangeHandler } = useContext(MouseContext);
+    // const { cursorChangeHandler } = useContext(MouseContext);
     const [open, setOpen] = useState(false);
   
   
@@ -55,11 +49,11 @@ export default function App() {
   window.addEventListener("scroll", reveal);
 
 
-  const RequireAuth = ({ children }) => {
-    return currentUser ? children : <Navigate to="/synetic-ss/login" />;
-  };
+  // const RequireAuth = ({ children }) => {
+  //   return currentUser ? children : <Navigate to="/synetic-ss/login" />;
+  // };
 
-  console.log(currentUser)
+  // console.log(currentUser)
   return (
     
     <div>
@@ -69,42 +63,42 @@ export default function App() {
         <Route path="/synetic-ss" element={<Home />} />
 
 
-        <Route element={ <RequireAuth> <Home /> </RequireAuth>} />
+        {/* <Route element={ <RequireAuth> <Home /> </RequireAuth>} />
 
         {/* dashboard pages */}
-          <Route path="/synetic-ss/Dashboard" element={ <RequireAuth> <Dashboard /></RequireAuth>} >
+          {/* <Route path="/synetic-ss/Dashboard" element={ <RequireAuth> <Dashboard /></RequireAuth>} > */}
                 {/* Dashboard */}
-                <Route path="/synetic-ss/Dashboard" element={ <RequireAuth> (<Ecommerce />) </RequireAuth>} />
+                {/* <Route path="/synetic-ss/Dashboard" element={ <RequireAuth> (<Ecommerce />) </RequireAuth>} /> */}
                 {/* pages  */}
-                <Route path="/synetic-ss/Dashboard/orders" element={ <RequireAuth> <Orders /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/customers" element={ <RequireAuth> <Employees /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/items" element={ <RequireAuth> <Customers /></RequireAuth>} />
+                {/* <Route path="/synetic-ss/Dashboard/orders" element={ <RequireAuth> <Orders /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/customers" element={ <RequireAuth> <Employees /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/items" element={ <RequireAuth> <Customers /></RequireAuth>} /> */}
 
                 {/* apps  */}
-                <Route path="/synetic-ss/Dashboard/kanban" element={ <RequireAuth> <Kanban /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/editor" element={ <RequireAuth> <Editor /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/calendar" element={ <RequireAuth> <Calendar /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/color-picker" element={ <RequireAuth> <ColorPicker /></RequireAuth>} />
+                {/* <Route path="/synetic-ss/Dashboard/kanban" element={ <RequireAuth> <Kanban /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/editor" element={ <RequireAuth> <Editor /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/calendar" element={ <RequireAuth> <Calendar /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/color-picker" element={ <RequireAuth> <ColorPicker /></RequireAuth>} /> */}
 
                 {/* charts  */}
-                <Route path="/synetic-ss/Dashboard/line" element={ <RequireAuth> <Line /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/employees/single" element={ <RequireAuth> <Single /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/bar" element={ <RequireAuth> <Bar /></RequireAuth>} />
-                 <Route path="/synetic-ss/Dashboard/customers/new" element={<New inputs = {userInputs} title="Add New User" />} />
-                 <Route path="/synetic-ss/Dashboard/items/new" element={<New inputs = {productInputs} title="Add New Product" />} />
+                {/* <Route path="/synetic-ss/Dashboard/line" element={ <RequireAuth> <Line /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/employees/single" element={ <RequireAuth> <Single /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/bar" element={ <RequireAuth> <Bar /></RequireAuth>} /> */}
+                 {/* <Route path="/synetic-ss/Dashboard/customers/new" element={<New inputs = {userInputs} title="Add New User" />} /> */}
+                 {/* <Route path="/synetic-ss/Dashboard/items/new" element={<New inputs = {productInputs} title="Add New Product" />} /> */}
                  {/* <Route 
                  path="/synetic-ss/Dashboard/new"
                 element={<New inputs={productInputs} title="Add New Product" />}
                  />  */}
-                <Route path="/synetic-ss/Dashboard/financial" element={ <RequireAuth> <Financial /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/color-mapping" element={ <RequireAuth> <ColorMapping /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/pyramid" element={ <RequireAuth> <Pyramid /></RequireAuth>} />
-                <Route path="/synetic-ss/Dashboard/stacked" element={ <RequireAuth> <Stacked /></RequireAuth>} />
-          </Route>
+                {/* <Route path="/synetic-ss/Dashboard/financial" element={ <RequireAuth> <Financial /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/color-mapping" element={ <RequireAuth> <ColorMapping /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/pyramid" element={ <RequireAuth> <Pyramid /></RequireAuth>} /> */}
+                {/* <Route path="/synetic-ss/Dashboard/stacked" element={ <RequireAuth> <Stacked /></RequireAuth>} /> */}
+          {/* </Route> */} 
 
 
           <Route path='/synetic-ss/contact' element={<Contactpage />} />
-          <Route path='/synetic-ss/login' element={<Login />} />
+          {/* <Route path='/synetic-ss/login' element={<Login />} /> */}
           <Route path='/synetic-ss/home' element={<Home />} />
           <Route path="/synetic-ss/about" element={<Aboutpage />} />
           <Route path="/synetic-ss/Register" element={<Register />} />
