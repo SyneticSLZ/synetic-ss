@@ -5,7 +5,7 @@ const UnityWebGLComponent = () => {
     <div>
       <iframe
         title="Unity WebGL"
-        src={`http://localhost:3000/synetic-ss/unity-build/index.html`}
+        src={`http://localhost:3000/synetic-ss/unity-build/index1.html`}
         
         frameBorder="0"
         position= 'absolute' top= '100px' left= '0' width= '100%' height='89vh'

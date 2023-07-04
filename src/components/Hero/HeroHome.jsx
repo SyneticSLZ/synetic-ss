@@ -110,7 +110,7 @@ const style1 = useSpring({
     class="hvideo"
     // id="vagonFrame"
     allow="microphone *; clipboard-read *; clipboard-write *; encrypted-media *;accelerometer; autoplay; gyroscope; controls;"
-    src={`http://localhost:3000/synetic-ss/unity-build/index.html`}
+    src={`http://localhost:3000/synetic-ss/unity-build/index1.html`}
     style={{
       position: 'absolute',
       top: '100px',
