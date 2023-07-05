@@ -58,6 +58,9 @@ function reveal(){
 window.addEventListener("scroll", reveal);
 
   return(
+
+
+    
     // <ThemeProvider theme={ theme }>
      <>
       <GlobalStyles />
