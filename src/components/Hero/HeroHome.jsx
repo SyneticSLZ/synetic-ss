@@ -47,7 +47,22 @@ export default function Home123(){
         successUrl: `${window.location.origin}/success`,
         cancelUrl: `${window.location.origin}/cancel`
       };
-      redirectToCheckout(checkoutOptions)
+      redirectToCheckout(checkoutOptions).then(() => {
+        // Send success message to Unity
+        sendMessageToUnity('PAYMENT_SUCCESS');
+      })
+      .catch(() => {
+        // Send error message to Unity
+        sendMessageToUnity('PAYMENT_ERROR');
+      });
+    }
+  };
+
+  const sendMessageToUnity = (messageType) => {
+    // Replace 'unityObject' with the appropriate reference to your Unity object
+    const unityObject = document.getElementById('unity-object');
+    if (unityObject) {
+      unityObject.postMessage(messageType, '*');
     }
   };
 
@@ -108,7 +123,7 @@ const style1 = useSpring({
                <div style={{ overflow: 'hidden' }}>
   <iframe
     class="hvideo"
-    // id="vagonFrame"
+    id="unityFrame"
     allow="microphone *; clipboard-read *; clipboard-write *; encrypted-media *;accelerometer; autoplay; gyroscope; controls;"
     src={`http://localhost:3000/synetic-ss/unity-build/index1.html`}
     style={{
@@ -124,3 +139,4 @@ const style1 = useSpring({
  
     )
 }
+
