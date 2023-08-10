@@ -5,4 +5,4 @@ app.use("/", (req, res) => {
     res.send("server is running index js");
 });
 
-app.listen(5000, console.log("server started on PORT 1000"));
+app.listen(5000, console.log("server started on PORT 12000"));
