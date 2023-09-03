@@ -95,7 +95,7 @@ sendMessageToUnity(messageToSend);
     <div style={{ width: '100%', overflow: 'hidden' }}>
       <div style={{ position: 'relative', padding: '56.25% 0 0 0', overflow: 'hidden' }}>
         <iframe frameborder="0" src="https://itch.io/embed-upload/8627911?color=333333" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}>
-        <a href="https://syneticslz.itch.io/jstest">Play jstest on itch.io</a>
+        <a href="https://syneticslz.itch.io/jstest">Play jstesuit on itch.io</a>
         </iframe>
       </div>
 
